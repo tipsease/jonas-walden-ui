@@ -1,114 +1,140 @@
-.home {
+body {
+  background-color: @body-bg;
+}
 
-  .intro {
-    padding: 90px 0 10px;
-    border-bottom: 2px dashed @navigation-border;
+.banner {
+  background-attachment: scroll, fixed;
+  height: 75rem;
+  background-image: url('img/overlay.png'),
+    url('/img/yong-chuan-474352-unsplash.jpg');
+  background-position: center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  color: #fff;
+  padding: 12em 0 20em 0;
+  text-align: center;
 
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+  h1 {
+    font-size: 7rem;
+  }
 
-    h2 {
-      margin-top: 20px;
+  p {
+    margin: 3rem 0;
+    font-size: 2.2rem;
+  }
+  #btnL {
+    width: 20rem;
+    height: 5.5rem;
+    border-radius: 1rem;
+    border-style: none;
+    background-color: @main-bg;
+    border: 1px solid @main-bg;
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+      color: white;
     }
   }
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  #btnR {
+    width: 20rem;
+    height: 5.5rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    border-style: none;
+    border: 1px solid @main-bg;
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: @font-color;
+    cursor: pointer;
 
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-
-      @media @mobile {
-        width: 100%;
-        padding: 0;
-      }
-    }
-
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      @media @mobile {
-        width: 100%;
-        padding: 0;
-      }
-
-      img {
-        border-radius: 10px;
-
-        @media @mobile {
-          width: 100%;
-        }
-      }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
     }
   }
+}
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+.box-1 {
+  border-radius: 1rem;
+  background: @main-bg;
 
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+  .heading {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 8rem 0;
+  }
+  h2 {
+    font-size: 3.5rem;
 
-      @media @mobile {
-        order: 1;
-      }
-    }
+    padding: 0 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  hr {
+    margin: 5rem 0;
+  }
+  #center-img {
+    height: 40rem;
+    width: 100%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+}
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
+.box-2 {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  background: @main-bg;
+  margin-top: 4rem;
 
-      @media @mobile {
-        order: 2;
-      }
+  padding: 5rem 5rem;
+  .proMo1 {
+    border-bottom: 2px @silver solid;
+    border-right: 2px @silver solid;
+    .promo1();
+
+    span {
+      .span(@eastern-blue);
     }
   }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    @media @mobile {
-      width: 100%;
+  .proMo2 {
+    .promo2();
+    span {
+      .span(@eastern-blue);
     }
-
-    img {
-      border-radius: 10px;
+    border-bottom: 2px @silver solid;
+  }
+  .proMo3 {
+    .promo1();
+    padding-top: 2rem;
+    border-right: 2px @silver solid;
+    span {
+      .span(@eastern-blue);
     }
   }
+  .proMo4 {
+    .promo2();
+    padding-top: 2rem;
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-
-    @media @mobile {
-      flex-wrap: wrap;
-    }
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-
-      @media @mobile {
-        width: 80%;
-        margin: 0 auto 30px;
-      }
-      
-      .btn {
-        .button-creator(200px, 45px, @button-bg, @white, 1.8rem);     
-      }
+    span {
+      .span(@eastern-blue);
     }
   }
-}// home
+}
+
+.box-3 {
+  display: flex;
+  justify-content: space-between;
+  .card1 {
+    .card();
+  }
+
+  .card2 {
+    .card();
+  }
+}
