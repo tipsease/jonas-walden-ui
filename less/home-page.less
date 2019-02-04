@@ -3,14 +3,14 @@ body {
 }
 
 .main {
-  height: 210rem;
+  height: 100%;
 }
 
 .banner {
   background-attachment: scroll, fixed;
   height: 75rem;
   background-image: url('img/overlay.png'),
-    url('/img/yong-chuan-474352-unsplash.jpg');
+    url('/img/yong-chuan-474352-unsplash.png');
   background-position: center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -31,14 +31,18 @@ body {
     height: 5.5rem;
     border-radius: 1rem;
     border-style: none;
-    background-color: @main-bg;
+    background-color: @buttonLight;
     border: 1px solid @main-bg;
     margin: 0 1rem;
     font-size: 1.7rem;
 
+    @media @mobile {
+      margin-bottom: 2rem;
+    }
+
     cursor: pointer;
     &:hover {
-      background-color: black;
+      background-color: @buttonDark;
       color: white;
     }
   }
@@ -47,7 +51,7 @@ body {
     width: 20rem;
     height: 5.5rem;
     border-radius: 1rem;
-    background-color: transparent;
+    background-color: @buttonDark;
     border-style: none;
     border: 1px solid @main-bg;
     margin: 0 1rem;
@@ -56,7 +60,8 @@ body {
     cursor: pointer;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: @buttonLight;
+      color: @buttonDark;
     }
   }
 }
@@ -75,9 +80,16 @@ body {
     font-size: 3.5rem;
 
     padding: 0 3rem;
+    @media @mobile {
+      font-size: 2.5rem;
+    }
   }
   h3 {
     font-size: 2.5rem;
+
+    @media @mobile {
+      font-size: 1.8rem;
+    }
   }
   hr {
     margin: 5rem 0;
@@ -88,6 +100,10 @@ body {
 
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
+
+    @media @mobile {
+      height: 250px;
+    }
   }
 }
 
@@ -105,13 +121,13 @@ body {
     .promo1();
 
     span {
-      .span(@eastern-blue);
+      .span(@moneyGr);
     }
   }
   .proMo2 {
     .promo2();
     span {
-      .span(@eastern-blue);
+      .span(@mauve);
     }
     border-bottom: 2px @silver solid;
   }
@@ -119,8 +135,9 @@ body {
     .promo1();
     padding-top: 2rem;
     border-right: 2px @silver solid;
+
     span {
-      .span(@eastern-blue);
+      .span(@grGray);
     }
   }
   .proMo4 {
@@ -128,26 +145,42 @@ body {
     padding-top: 2rem;
 
     span {
-      .span(@eastern-blue);
+      .span(@darkGr);
     }
+  }
+
+  @media @mobile {
+    display: none;
   }
 }
 
 .box-3 {
   display: flex;
   justify-content: space-between;
+
+  @media @mobile {
+    flex-direction: column;
+  }
+
   .card1 {
     .card();
+
+    @media @mobile {
+      width: 100%;
+    }
   }
 
   .card2 {
     .card();
+    @media @mobile {
+      width: 100%;
+    }
   }
 }
 
 .end-content {
   text-align: center;
-  background-color: @salmon;
+  background-color: @mauve;
   padding: 6.6rem 0;
   h2 {
     font-size: 3.5rem;
@@ -158,6 +191,14 @@ body {
     margin-bottom: 3rem;
     color: @font-color;
     font-size: 2rem;
+
+    @media @mobile {
+      padding: 2rem;
+    }
+
+    #pitch {
+      padding: 0 2rem;
+    }
   }
   input {
     width: 30rem;
@@ -175,7 +216,17 @@ body {
 
   button {
     margin: 0 2rem;
-    .button-creator(15rem, 6rem, @button-bg, @font-color-dark, 1.8rem);
+    .button-creator(15rem, 6rem, @buttonLight, @font-color-dark, 1.8rem);
     display: inline;
+
+    @media @mobile {
+      width: 300px;
+      margin: 2rem 2rem;
+    }
+
+    &:hover {
+      color: @buttonLight;
+      background-color: @buttonDark;
+    }
   }
 }

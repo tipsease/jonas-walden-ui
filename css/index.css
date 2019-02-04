@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -179,7 +180,7 @@ img {
 }
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: relative;
   top: -13rem;
@@ -192,24 +193,28 @@ header #logo {
   height: 10rem;
 }
 header nav a {
-  margin: 0 1rem;
-  font-size: 1.5rem;
+  margin: 0 2rem;
+  font-size: 1.8rem;
   text-decoration: none;
-  color: #ffffff;
+  color: #eef1e3;
 }
 header button {
   padding: 0.5rem 1.5rem;
   background-color: transparent;
   border-style: none;
-  color: #ffffff;
+  color: #eef1e3;
   border-radius: 0.5rem;
   border: 1px solid #ffffff;
   font-size: 1.6rem;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  header {
+    display: none;
+  }
+}
 .footer {
   width: 100%;
-  border-top: 2px dashed #c0c0c0;
 }
 .footer .social {
   display: flex;
@@ -217,27 +222,28 @@ header button {
   text-align: center;
   font-size: 3rem;
   margin-top: 3rem;
-  color: #ffffff;
+  color: #eef1e3;
 }
 .footer .social i {
   margin: 0 3rem;
+  color: #737669;
 }
 .footer p {
   text-align: center;
-  color: #ffffff;
+  color: #737669;
   font-size: 1.6rem;
   padding: 20px;
 }
 body {
-  background-color: #c0c0c0;
+  background-color: #eef1e3;
 }
 .main {
-  height: 210rem;
+  height: 100%;
 }
 .banner {
   background-attachment: scroll, fixed;
   height: 75rem;
-  background-image: url('img/overlay.png'), url('/img/yong-chuan-474352-unsplash.jpg');
+  background-image: url('img/overlay.png'), url('/img/yong-chuan-474352-unsplash.png');
   background-position: center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -257,30 +263,36 @@ body {
   height: 5.5rem;
   border-radius: 1rem;
   border-style: none;
-  background-color: #ffffff;
+  background-color: #eef1e3;
   border: 1px solid #ffffff;
   margin: 0 1rem;
   font-size: 1.7rem;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .banner #btnL {
+    margin-bottom: 2rem;
+  }
+}
 .banner #btnL:hover {
-  background-color: black;
+  background-color: #86a38c;
   color: white;
 }
 .banner #btnR {
   width: 20rem;
   height: 5.5rem;
   border-radius: 1rem;
-  background-color: transparent;
+  background-color: #86a38c;
   border-style: none;
   border: 1px solid #ffffff;
   margin: 0 1rem;
   font-size: 1.7rem;
-  color: #ffffff;
+  color: #eef1e3;
   cursor: pointer;
 }
 .banner #btnR:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #eef1e3;
+  color: #86a38c;
 }
 .box-1 {
   border-radius: 1rem;
@@ -296,8 +308,18 @@ body {
   font-size: 3.5rem;
   padding: 0 3rem;
 }
+@media (max-width: 500px) {
+  .box-1 h2 {
+    font-size: 2.5rem;
+  }
+}
 .box-1 h3 {
   font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .box-1 h3 {
+    font-size: 1.8rem;
+  }
 }
 .box-1 hr {
   margin: 5rem 0;
@@ -307,6 +329,11 @@ body {
   width: 100%;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
+}
+@media (max-width: 500px) {
+  .box-1 #center-img {
+    height: 250px;
+  }
 }
 .box-2 {
   display: flex;
@@ -341,9 +368,10 @@ body {
   align-items: center;
   width: 100px;
   height: 100px;
-  background-color: #17a2b8;
+  background-color: #67ab4c;
   border-radius: 50%;
   font-size: 5rem;
+  color: #eef1e3;
   margin-bottom: 4rem;
 }
 .box-2 .proMo2 {
@@ -370,9 +398,10 @@ body {
   align-items: center;
   width: 100px;
   height: 100px;
-  background-color: #17a2b8;
+  background-color: #86a38c;
   border-radius: 50%;
   font-size: 5rem;
+  color: #eef1e3;
   margin-bottom: 4rem;
 }
 .box-2 .proMo3 {
@@ -400,9 +429,10 @@ body {
   align-items: center;
   width: 100px;
   height: 100px;
-  background-color: #17a2b8;
+  background-color: #737669;
   border-radius: 50%;
   font-size: 5rem;
+  color: #eef1e3;
   margin-bottom: 4rem;
 }
 .box-2 .proMo4 {
@@ -429,14 +459,25 @@ body {
   align-items: center;
   width: 100px;
   height: 100px;
-  background-color: #17a2b8;
+  background-color: #282b3d;
   border-radius: 50%;
   font-size: 5rem;
+  color: #eef1e3;
   margin-bottom: 4rem;
+}
+@media (max-width: 500px) {
+  .box-2 {
+    display: none;
+  }
 }
 .box-3 {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .box-3 {
+    flex-direction: column;
+  }
 }
 .box-3 .card1 {
   width: 49%;
@@ -458,9 +499,20 @@ body {
   font-size: 3rem;
   margin-top: 8rem;
 }
+@media (max-width: 500px) {
+  .box-3 .card1 h3 {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+}
 .box-3 .card1 p {
   margin-top: 4rem;
   padding: 0 3rem;
+}
+@media (max-width: 500px) {
+  .box-3 .card1 p {
+    padding: 0 0.5rem;
+  }
 }
 .box-3 .card1 button {
   margin: 3rem auto;
@@ -473,6 +525,11 @@ body {
 }
 .box-3 .card1 button:hover {
   background-color: grey;
+}
+@media (max-width: 500px) {
+  .box-3 .card1 {
+    width: 100%;
+  }
 }
 .box-3 .card2 {
   width: 49%;
@@ -494,9 +551,20 @@ body {
   font-size: 3rem;
   margin-top: 8rem;
 }
+@media (max-width: 500px) {
+  .box-3 .card2 h3 {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+}
 .box-3 .card2 p {
   margin-top: 4rem;
   padding: 0 3rem;
+}
+@media (max-width: 500px) {
+  .box-3 .card2 p {
+    padding: 0 0.5rem;
+  }
 }
 .box-3 .card2 button {
   margin: 3rem auto;
@@ -510,20 +578,33 @@ body {
 .box-3 .card2 button:hover {
   background-color: grey;
 }
+@media (max-width: 500px) {
+  .box-3 .card2 {
+    width: 100%;
+  }
+}
 .end-content {
   text-align: center;
-  background-color: salmon;
+  background-color: #86a38c;
   padding: 6.6rem 0;
 }
 .end-content h2 {
   font-size: 3.5rem;
   margin-bottom: 3rem;
-  color: #ffffff;
+  color: #eef1e3;
 }
 .end-content p {
   margin-bottom: 3rem;
-  color: #ffffff;
+  color: #eef1e3;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .end-content p {
+    padding: 2rem;
+  }
+}
+.end-content p #pitch {
+  padding: 0 2rem;
 }
 .end-content input {
   width: 30rem;
@@ -532,10 +613,10 @@ body {
   background-color: rgba(235, 230, 230, 0.2);
   font-size: 1.8rem;
   border-radius: 1rem;
-  color: #ffffff;
+  color: #eef1e3;
 }
 .end-content input::placeholder {
-  color: #ffffff;
+  color: #eef1e3;
   font-size: 2rem;
 }
 .end-content button {
@@ -548,8 +629,8 @@ body {
   align-items: center;
   width: 15rem;
   height: 6rem;
-  background-color: #ffffff;
-  color: #545455;
+  background-color: #eef1e3;
+  color: #737669;
   border: 1px solid #c0c0c0;
   cursor: pointer;
   font-size: 1.8rem;
@@ -563,4 +644,14 @@ body {
 .end-content button:hover {
   background: #ffffff;
   color: #ffffff;
+}
+@media (max-width: 500px) {
+  .end-content button {
+    width: 300px;
+    margin: 2rem 2rem;
+  }
+}
+.end-content button:hover {
+  color: #eef1e3;
+  background-color: #86a38c;
 }

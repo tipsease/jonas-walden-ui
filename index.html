@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Tipsease</title>
 
@@ -10,12 +11,15 @@
       href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
     <link href="css/index.css" rel="stylesheet" />
 
@@ -26,48 +30,46 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body class="contentToScroll">
     <section class="banner">
       <header>
-        <img id="logo" src="/img/tipease3.png" alt="Tipsease-logo" />
         <nav>
-          <a href="#">section1</a>
-          <a href="#">section2</a>
-          <a href="#">section3</a>
+          <a href="#pitch">TipsEase</a>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
           <button>Sign Up</button>
         </nav>
       </header>
-      <h1>TipsEase</h1>
-      <p>Lorem ipsum dolor sit.</p>
+      <h1><img id="logo" src="/img/tipease3.png" alt="Tipsease-logo" /></h1>
+
       <button id="btnL">
         Sign Up
       </button>
-      <button id="btnR">Donate</button>
+      <button id="btnR">Learn More</button>
     </section>
 
-    <section class="main">
+    <section id="pitch" class="main">
       <div class="container">
         <div class="box-1">
           <div class="heading">
             <h2>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae, incidunt maiores.
+              TipsEase making spending money even easier.
             </h2>
             <hr />
             <h3>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
-              unde dignissimos iure assumenda mollitia dolores, sint quasi
-              sapiente eligendi est?
+              Tips Ease is the easiest and safest way for you to deliver your
+              money straight into the pockes of others. With a click of a button
+              your hard earned money will be safely be transferred directly into
+              the account of a complete stranger. Completing your social
+              obligation in the eyes of the general public and making you appear
+              to be a good person.
             </h3>
           </div>
-          <img
-            id="center-img"
-            src="/img/sam-truong-dan-627874-unsplash.jpg"
-            alt="Tipsease"
-          />
+          <img id="center-img" src="/img/tipjar.png" alt="Tipsease" />
         </div>
 
-        <div class="box-2">
+        <div id="features" class="box-2">
           <div class="proMo1">
             <span class="circle"><i class="fas fa-chart-area"></i></span>
             <h3>Lorem, ipsum dolor.</h3>
@@ -105,7 +107,7 @@
             </p>
           </div>
         </div>
-        <div class="box-3">
+        <div id="about" class="box-3">
           <div class="card1">
             <img src="img/money.jpg" alt="" />
             <h3>Lorem, ipsum</h3>
@@ -129,7 +131,7 @@
         </div>
       </div>
     </section>
-    <section class="end-content">
+    <section id="contact" class="end-content">
       <h2>Sign up for beta access</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat,
@@ -140,10 +142,10 @@
     </section>
     <footer class="footer">
       <div class="social">
-        <i class="fab fa-github"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-instagram"></i>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
       <p>Copyright Tipease 2019</p>
     </footer>

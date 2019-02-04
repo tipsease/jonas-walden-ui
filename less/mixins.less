@@ -78,6 +78,7 @@
   background-color: @bg-color;
   border-radius: 50%;
   font-size: 5rem;
+  color: @offwhite;
   margin-bottom: 4rem;
 }
 
@@ -91,6 +92,10 @@
   background-color: @main-bg;
   border-radius: 1rem;
   padding-bottom: 3rem;
+
+  @media @mobile {
+  }
+
   img {
     height: 20rem;
     border-top-right-radius: 1rem;
@@ -99,11 +104,19 @@
   h3 {
     font-size: 3rem;
     margin-top: 8rem;
+
+    @media @mobile {
+      font-size: 2.5rem;
+      margin-top: 4rem;
+    }
   }
 
   p {
     margin-top: 4rem;
     padding: 0 3rem;
+    @media @mobile {
+      padding: 0 0.5rem;
+    }
   }
 
   button {
