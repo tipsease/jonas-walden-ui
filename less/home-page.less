@@ -2,6 +2,10 @@ body {
   background-color: @body-bg;
 }
 
+.main {
+  height: 210rem;
+}
+
 .banner {
   background-attachment: scroll, fixed;
   height: 75rem;
@@ -31,6 +35,7 @@ body {
     border: 1px solid @main-bg;
     margin: 0 1rem;
     font-size: 1.7rem;
+
     cursor: pointer;
     &:hover {
       background-color: black;
@@ -78,8 +83,9 @@ body {
     margin: 5rem 0;
   }
   #center-img {
-    height: 40rem;
+    height: 425px;
     width: 100%;
+
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
   }
@@ -136,5 +142,40 @@ body {
 
   .card2 {
     .card();
+  }
+}
+
+.end-content {
+  text-align: center;
+  background-color: @salmon;
+  padding: 6.6rem 0;
+  h2 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    color: @font-color;
+  }
+  p {
+    margin-bottom: 3rem;
+    color: @font-color;
+    font-size: 2rem;
+  }
+  input {
+    width: 30rem;
+    padding: 2rem 2rem;
+    border-style: none;
+    background-color: rgba(235, 230, 230, 0.2);
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    color: @font-color;
+  }
+  input::placeholder {
+    color: @font-color;
+    font-size: 2rem;
+  }
+
+  button {
+    margin: 0 2rem;
+    .button-creator(15rem, 6rem, @button-bg, @font-color-dark, 1.8rem);
+    display: inline;
   }
 }

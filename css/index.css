@@ -211,6 +211,17 @@ header button {
   width: 100%;
   border-top: 2px dashed #c0c0c0;
 }
+.footer .social {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 3rem;
+  color: #ffffff;
+}
+.footer .social i {
+  margin: 0 3rem;
+}
 .footer p {
   text-align: center;
   color: #ffffff;
@@ -219,6 +230,9 @@ header button {
 }
 body {
   background-color: #c0c0c0;
+}
+.main {
+  height: 210rem;
 }
 .banner {
   background-attachment: scroll, fixed;
@@ -289,7 +303,7 @@ body {
   margin: 5rem 0;
 }
 .box-1 #center-img {
-  height: 40rem;
+  height: 425px;
   width: 100%;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -495,4 +509,58 @@ body {
 }
 .box-3 .card2 button:hover {
   background-color: grey;
+}
+.end-content {
+  text-align: center;
+  background-color: salmon;
+  padding: 6.6rem 0;
+}
+.end-content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+.end-content p {
+  margin-bottom: 3rem;
+  color: #ffffff;
+  font-size: 2rem;
+}
+.end-content input {
+  width: 30rem;
+  padding: 2rem 2rem;
+  border-style: none;
+  background-color: rgba(235, 230, 230, 0.2);
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  color: #ffffff;
+}
+.end-content input::placeholder {
+  color: #ffffff;
+  font-size: 2rem;
+}
+.end-content button {
+  margin: 0 2rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 6rem;
+  background-color: #ffffff;
+  color: #545455;
+  border: 1px solid #c0c0c0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  display: inline;
+}
+@media (max-width: 500px) {
+  .end-content button {
+    width: 100%;
+  }
+}
+.end-content button:hover {
+  background: #ffffff;
+  color: #ffffff;
 }
