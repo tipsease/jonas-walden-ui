@@ -236,6 +236,7 @@ header button {
 }
 body {
   background-color: #eef1e3;
+  position: relative;
 }
 .main {
   height: 100%;
