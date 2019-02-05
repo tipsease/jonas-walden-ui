@@ -62,8 +62,7 @@ addTip.addEventListener('click', heresATip);
 
 function heresATip() {
   var newH1 = document.createElement('h1');
-  newH1.textContent =
-    'Here is a tip, I should have used TipsEase to give this to you';
+  newH1.textContent = 'Here is a tip, Dont Tip Cows Tip People';
 
   addTip.appendChild(newH1);
 }
