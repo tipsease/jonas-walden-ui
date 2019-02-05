@@ -55,3 +55,15 @@ function sound_4() {
   let audio3 = new Audio('audio/bubbling1.wav');
   audio3.play();
 }
+
+const addTip = document.querySelector('.box-2');
+
+addTip.addEventListener('click', heresATip);
+
+function heresATip() {
+  var newH1 = document.createElement('h1');
+  newH1.textContent =
+    'Here is a tip, I should have used TipsEase to give this to you';
+
+  addTip.appendChild(newH1);
+}

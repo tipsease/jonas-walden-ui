@@ -348,6 +348,11 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  .box-2 h1 {
+    display: none;
+  }
+}
 .box-2 .proMo1 {
   border-bottom: 2px #c0c0c0 solid;
   border-right: 2px #c0c0c0 solid;
