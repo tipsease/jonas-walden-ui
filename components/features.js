@@ -61,8 +61,15 @@ const addTip = document.querySelector('.box-2');
 addTip.addEventListener('click', heresATip);
 
 function heresATip() {
-  var newH1 = document.createElement('h1');
+  const newH1 = document.createElement('h1');
   newH1.textContent = 'Here is a tip, Dont Tip Cows Tip People';
 
   addTip.appendChild(newH1);
+
+  TweenMax.to(newH1, 2, {
+    scaleX: 1.5,
+    scaleY: 1.5,
+    opacity: 0,
+    display: 'none'
+  });
 }
