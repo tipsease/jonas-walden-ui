@@ -10,11 +10,10 @@ body {
 .banner {
   background-attachment: scroll, fixed;
   height: 75rem;
-  background-image: url('img/overlay.png'),
-    url('/img/yong-chuan-474352-unsplash.png');
+  background-image: url('/img/yong-chuan-474352-unsplash.png');
   background-position: center;
   background-repeat: repeat, no-repeat;
-  background-size: auto, cover;
+  background-size: cover;
   color: #fff;
   padding: 12em 0 20em 0;
   text-align: center;
@@ -115,10 +114,17 @@ body {
   background: @main-bg;
   margin-top: 4rem;
 
+  @media @mobile {
+    flex-direction: column;
+  }
+
   padding: 5rem 5rem;
   .proMo1 {
     border-bottom: 2px @silver solid;
     border-right: 2px @silver solid;
+    @media @mobile {
+      border-right: 0 @silver solid;
+    }
     .promo1();
 
     span {
@@ -137,6 +143,11 @@ body {
     padding-top: 2rem;
     border-right: 2px @silver solid;
 
+    @media @mobile {
+      border-right: 0 @silver solid;
+      border-bottom: 2px @silver solid;
+    }
+
     span {
       .span(@grGray);
     }
@@ -148,10 +159,6 @@ body {
     span {
       .span(@darkGr);
     }
-  }
-
-  @media @mobile {
-    display: none;
   }
 }
 

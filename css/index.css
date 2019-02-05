@@ -244,10 +244,10 @@ body {
 .banner {
   background-attachment: scroll, fixed;
   height: 75rem;
-  background-image: url('img/overlay.png'), url('/img/yong-chuan-474352-unsplash.png');
+  background-image: url('/img/yong-chuan-474352-unsplash.png');
   background-position: center;
   background-repeat: repeat, no-repeat;
-  background-size: auto, cover;
+  background-size: cover;
   color: #fff;
   padding: 12em 0 20em 0;
   text-align: center;
@@ -344,6 +344,11 @@ body {
   margin-top: 4rem;
   padding: 5rem 5rem;
 }
+@media (max-width: 500px) {
+  .box-2 {
+    flex-direction: column;
+  }
+}
 .box-2 .proMo1 {
   border-bottom: 2px #c0c0c0 solid;
   border-right: 2px #c0c0c0 solid;
@@ -354,6 +359,17 @@ body {
   width: 50%;
   padding-right: 5rem;
   padding-bottom: 5rem;
+}
+@media (max-width: 500px) {
+  .box-2 .proMo1 {
+    border-right: 0 #c0c0c0 solid;
+  }
+}
+@media (max-width: 500px) {
+  .box-2 .proMo1 {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 .box-2 .proMo1 h3 {
   margin-bottom: 2rem;
@@ -384,6 +400,13 @@ body {
   padding-left: 5rem;
   padding-bottom: 5rem;
   border-bottom: 2px #c0c0c0 solid;
+}
+@media (max-width: 500px) {
+  .box-2 .proMo2 {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 2rem;
+  }
 }
 .box-2 .proMo2 h3 {
   margin-bottom: 2rem;
@@ -416,12 +439,24 @@ body {
   padding-top: 2rem;
   border-right: 2px #c0c0c0 solid;
 }
+@media (max-width: 500px) {
+  .box-2 .proMo3 {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .box-2 .proMo3 h3 {
   margin-bottom: 2rem;
   font-size: 3rem;
 }
 .box-2 .proMo3 p {
   padding: 0 1rem;
+}
+@media (max-width: 500px) {
+  .box-2 .proMo3 {
+    border-right: 0 #c0c0c0 solid;
+    border-bottom: 2px #c0c0c0 solid;
+  }
 }
 .box-2 .proMo3 span {
   display: flex;
@@ -446,6 +481,13 @@ body {
   padding-bottom: 5rem;
   padding-top: 2rem;
 }
+@media (max-width: 500px) {
+  .box-2 .proMo4 {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+}
 .box-2 .proMo4 h3 {
   margin-bottom: 2rem;
   font-size: 3rem;
@@ -465,11 +507,6 @@ body {
   font-size: 5rem;
   color: #eef1e3;
   margin-bottom: 4rem;
-}
-@media (max-width: 500px) {
-  .box-2 {
-    display: none;
-  }
 }
 .box-3 {
   display: flex;

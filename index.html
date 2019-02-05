@@ -20,12 +20,14 @@
       crossorigin="anonymous"
     />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-
     <link href="css/index.css" rel="stylesheet" />
 
     <script src="js/index.js" async></script>
-    <script src="/components/features.js"></script>
+    <script src="/components/features.js" async></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"
+      async
+    ></script>
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -71,16 +73,16 @@
           <img id="center-img" src="/img/tipjar.png" alt="Tipsease" />
         </div>
 
-        <div id="features" class="box-2">
-          <div class="proMo1">
+        <div id="feature" class="box-2">
+          <div class="proMo1 feature">
             <span class="circle"><i class="fas fa-concierge-bell"></i></span>
             <h3>TipsEase At Hotels</h3>
-            <p>
+            <p id="now">
               Tip the bell hops, tip the maids, tip matradee it's all easy with
               TipsEase.
             </p>
           </div>
-          <div class="proMo2">
+          <div class="proMo2 feature">
             <span class="circle"><i class="fas fa-utensils"></i></span>
             <h3>TipsEase At Restraunt</h3>
             <p>
@@ -88,7 +90,7 @@
               TipsEase was made for silly!
             </p>
           </div>
-          <div class="proMo3">
+          <div class="proMo3 feature">
             <span class="circle"><i class="fas fa-gas-pump"></i></span>
             <h3>TipsEase At Gas Stations</h3>
             <p>
@@ -96,7 +98,7 @@
               should and TipsEase makes it a breaze!
             </p>
           </div>
-          <div class="proMo4">
+          <div class="proMo4 feature">
             <span class="circle"><i class="fas fa-taxi"></i></span>
             <h3>TipsEase For Taxies</h3>
             <p>

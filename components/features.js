@@ -1,17 +1,23 @@
 class Feature {
-  constructor() {
+  constructor(element) {
     this.element = element;
     this.element.addEventListener('click', () => this.read());
-    console.log(this.element);
   }
   read() {
-    TweenMax.to(this.element, 2, {
+    // TweenMax.to(this.element, 2, {
+    //   opacity: 0,
+    //   onComplete: (this.element.style.display = 'none')
+    // });
+    TweenMax.to(this.element, 1, {
       opacity: 0,
-      onComplete: (this.element.style.display = 'none')
+      rotation: 360,
+      scaleX: 0,
+      scaleY: 0,
+      display: 'none'
     });
   }
 }
 
-let features = Array.from(document.querySelectorAll('#feature')).map(
-  f => new features(f)
+let features = Array.from(document.querySelectorAll('.feature ')).map(
+  f => new Feature(f)
 );

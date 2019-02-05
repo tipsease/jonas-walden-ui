@@ -5,5 +5,4 @@ social.forEach(link => link.addEventListener('click', box));
 
 function box(e) {
   e.preventDefault();
-  social2.style.color = 'red';
 }
