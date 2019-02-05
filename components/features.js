@@ -21,3 +21,5 @@ class Feature {
 let features = Array.from(document.querySelectorAll('.feature ')).map(
   f => new Feature(f)
 );
+
+window.addEventListener('mouseup', function(e) {}, false);
