@@ -73,3 +73,31 @@ function heresATip() {
     display: 'none'
   });
 }
+
+const navBtn = document
+  .querySelector('#navBtn')
+  .addEventListener('click', function() {
+    window.location =
+      'https://5c5a7369369d6d51d2e1107a--youthful-murdock-e2b72b.netlify.com/register';
+  });
+
+const btnL = document
+  .querySelector('#btnL')
+  .addEventListener('click', function() {
+    window.location =
+      'https://5c5a7369369d6d51d2e1107a--youthful-murdock-e2b72b.netlify.com/register';
+  });
+
+const btnR = document
+  .querySelector('#btnR')
+  .addEventListener('click', function() {
+    window.location =
+      'https://5c5a7369369d6d51d2e1107a--youthful-murdock-e2b72b.netlify.com/login';
+  });
+
+const betaBtn = document
+  .querySelector('#betaBtn')
+  .addEventListener('click', function() {
+    window.location =
+      'https://5c5a7369369d6d51d2e1107a--youthful-murdock-e2b72b.netlify.com/register';
+  });
