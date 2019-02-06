@@ -170,6 +170,42 @@ body {
       .span(@darkGr);
     }
   }
+
+  .proMo5 {
+    .promo1();
+    padding-top: 2rem;
+    border-right: 2px @silver solid;
+
+    @media @mobile {
+      border-right: 0 @silver solid;
+      border-bottom: 2px @silver solid;
+    }
+
+    span {
+      .span(@grGray);
+    }
+    padding-top: 2rem;
+    border-top: 2px @silver solid;
+  }
+
+  .proMo6 {
+    .promo2();
+    span {
+      .span(@white);
+    }
+    padding-top: 2rem;
+    border-top: 2px @silver solid;
+  }
+
+  .proMo8 {
+    .promo2();
+    span {
+      .span(@white);
+    }
+    padding-top: 2rem;
+    border-top: 2px @silver solid;
+    border-bottom: 2px @silver solid;
+  }
 }
 
 .box-3 {
