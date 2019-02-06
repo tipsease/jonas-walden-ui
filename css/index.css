@@ -206,6 +206,7 @@ header button {
   border-radius: 0.5rem;
   border: 1px solid #ffffff;
   font-size: 1.6rem;
+  outline: none;
   cursor: pointer;
 }
 @media (max-width: 500px) {
@@ -288,6 +289,7 @@ body {
   margin: 0 1rem;
   font-size: 1.7rem;
   color: #eef1e3;
+  outline: none;
   cursor: pointer;
 }
 .banner #btnR:hover {
@@ -570,9 +572,10 @@ body {
   border-style: none;
   border: 1px #c0c0c0 solid;
   background-color: transparent;
+  outline: none;
 }
 .box-3 .card1 button:hover {
-  background-color: grey;
+  background-color: #86a38c;
 }
 @media (max-width: 500px) {
   .box-3 .card1 {
@@ -622,9 +625,10 @@ body {
   border-style: none;
   border: 1px #c0c0c0 solid;
   background-color: transparent;
+  outline: none;
 }
 .box-3 .card2 button:hover {
-  background-color: grey;
+  background-color: #86a38c;
 }
 @media (max-width: 500px) {
   .box-3 .card2 {
