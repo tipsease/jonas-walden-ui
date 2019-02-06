@@ -268,6 +268,7 @@ body {
   border: 1px solid #ffffff;
   margin: 0 1rem;
   font-size: 1.7rem;
+  outline: none;
   cursor: pointer;
 }
 @media (max-width: 500px) {
@@ -687,6 +688,7 @@ body {
   cursor: pointer;
   font-size: 1.8rem;
   display: inline;
+  outline: none;
 }
 @media (max-width: 500px) {
   .end-content button {
