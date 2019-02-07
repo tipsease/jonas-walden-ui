@@ -77,13 +77,13 @@ function heresATip() {
 const navBtn = document
   .querySelector('#navBtn')
   .addEventListener('click', function() {
-    window.location = 'http://www.tipsease.services/staff-form';
+    window.location = 'http://www.tipsease.services/register-form';
   });
 
 const btnL = document
   .querySelector('#btnL')
   .addEventListener('click', function() {
-    window.location = 'http://www.tipsease.services/staff-form';
+    window.location = 'http://www.tipsease.services/register-form';
   });
 
 const btnR = document
@@ -95,5 +95,5 @@ const btnR = document
 const betaBtn = document
   .querySelector('#betaBtn')
   .addEventListener('click', function() {
-    window.location = 'http://www.tipsease.services/staff-form';
+    window.location = 'http://www.tipsease.services/register-form';
   });
