@@ -1,114 +1,286 @@
-.home {
+body {
+  background-color: @body-bg;
+}
 
-  .intro {
-    padding: 90px 0 10px;
-    border-bottom: 2px dashed @navigation-border;
+.main {
+  height: 100%;
+}
 
-    img {
-      max-width: 100%;
-      height: auto;
+.banner {
+  background-attachment: fixed;
+  height: 75rem;
+  background-image: url('/img/yong-chuan-474352-unsplash.png');
+  background-position: center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 12em 0 20em 0;
+  text-align: center;
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  p {
+    margin: 3rem 0;
+    font-size: 2.2rem;
+  }
+  #btnL {
+    width: 20rem;
+    height: 5.5rem;
+    border-radius: 1rem;
+    border-style: none;
+    background-color: @buttonLight;
+    border: 1px solid @main-bg;
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    outline: none;
+    @media @mobile {
+      margin-bottom: 2rem;
     }
 
-    h2 {
-      margin-top: 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: @buttonDark;
+      color: white;
     }
   }
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  #btnR {
+    width: 20rem;
+    height: 5.5rem;
+    border-radius: 1rem;
+    background-color: @buttonDark;
+    border-style: none;
+    border: 1px solid @main-bg;
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: @font-color;
+    outline: none;
+    cursor: pointer;
 
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-
-      @media @mobile {
-        width: 100%;
-        padding: 0;
-      }
+    &:hover {
+      background-color: @buttonLight;
+      color: @buttonDark;
     }
+  }
+}
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
+.box-1 {
+  border-radius: 1rem;
+  background: @main-bg;
 
-      @media @mobile {
-        width: 100%;
-        padding: 0;
-      }
+  .heading {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 8rem 0;
+  }
+  h2 {
+    font-size: 3.5rem;
 
-      img {
-        border-radius: 10px;
+    padding: 0 3rem;
+    @media @mobile {
+      font-size: 2.5rem;
+    }
+  }
+  h3 {
+    font-size: 2.5rem;
 
-        @media @mobile {
-          width: 100%;
-        }
-      }
+    @media @mobile {
+      font-size: 1.8rem;
+    }
+  }
+  hr {
+    margin: 5rem 0;
+  }
+  #center-img {
+    height: 425px;
+    width: 100%;
+
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    @media @mobile {
+      height: 250px;
+    }
+  }
+}
+
+.box-2 {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  background: @main-bg;
+  margin-top: 4rem;
+  text-align: center;
+
+  @media @mobile {
+    flex-direction: column;
+  }
+
+  h1 {
+    @media @tablet {
+      font-size: 2.5rem;
+    }
+    @media @mobile {
+      display: none;
     }
   }
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+  padding: 5rem 5rem;
+  .proMo1 {
+    border-bottom: 2px @silver solid;
+    border-right: 2px @silver solid;
+    @media @mobile {
+      border-right: 0 @silver solid;
+    }
+    .promo1();
 
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+    span {
+      .span(@moneyGr);
+    }
+  }
+  .proMo2 {
+    .promo2();
+    span {
+      .span(@mauve);
+    }
+    border-bottom: 2px @silver solid;
+  }
+  .proMo3 {
+    .promo1();
+    padding-top: 2rem;
+    border-right: 2px @silver solid;
 
-      @media @mobile {
-        order: 1;
-      }
+    @media @mobile {
+      border-right: 0 @silver solid;
+      border-bottom: 2px @silver solid;
     }
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
+    span {
+      .span(@grGray);
+    }
+  }
+  .proMo4 {
+    .promo2();
+    padding-top: 2rem;
 
-      @media @mobile {
-        order: 2;
-      }
+    span {
+      .span(@darkGr);
     }
   }
 
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
+  .proMo5 {
+    .promo1();
+    padding-top: 2rem;
+    border-right: 2px @silver solid;
+
+    @media @mobile {
+      border-right: 0 @silver solid;
+      border-bottom: 2px @silver solid;
+    }
+
+    span {
+      .span(@grGray);
+    }
+    padding-top: 2rem;
+    border-top: 2px @silver solid;
+  }
+
+  .proMo6 {
+    .promo2();
+    span {
+      .span(@white);
+    }
+    padding-top: 2rem;
+    border-top: 2px @silver solid;
+  }
+
+  .proMo8 {
+    .promo2();
+    span {
+      .span(@white);
+    }
+    padding-top: 2rem;
+    border-top: 2px @silver solid;
+    border-bottom: 2px @silver solid;
+  }
+}
+
+.box-3 {
+  display: flex;
+  justify-content: space-between;
+
+  @media @mobile {
+    flex-direction: column;
+  }
+
+  .card1 {
+    .card();
 
     @media @mobile {
       width: 100%;
     }
-
-    img {
-      border-radius: 10px;
-    }
   }
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+  .card2 {
+    .card();
+    @media @mobile {
+      width: 100%;
+    }
+  }
+}
+
+.end-content {
+  text-align: center;
+  background-color: @mauve;
+  padding: 6.6rem 0;
+  h2 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    color: @font-color;
+  }
+  p {
+    margin-bottom: 3rem;
+    color: @font-color;
+    font-size: 2rem;
 
     @media @mobile {
-      flex-wrap: wrap;
+      padding: 2rem;
     }
 
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-
-      @media @mobile {
-        width: 80%;
-        margin: 0 auto 30px;
-      }
-      
-      .btn {
-        .button-creator(200px, 45px, @button-bg, @white, 1.8rem);     
-      }
+    #pitch {
+      padding: 0 2rem;
     }
   }
-}// home
+  input {
+    width: 30rem;
+    padding: 2rem 2rem;
+    border-style: none;
+    background-color: rgba(235, 230, 230, 0.2);
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    color: @font-color;
+  }
+  input::placeholder {
+    color: @font-color;
+    font-size: 2rem;
+  }
+
+  button {
+    margin: 0 2rem;
+    .button-creator(15rem, 6rem, @buttonLight, @font-color-dark, 1.8rem);
+    display: inline;
+    outline: none;
+    @media @mobile {
+      width: 300px;
+      margin: 2rem 2rem;
+    }
+
+    &:hover {
+      color: @buttonLight;
+      background-color: @buttonDark;
+    }
+  }
+}
