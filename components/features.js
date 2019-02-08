@@ -77,23 +77,23 @@ function heresATip() {
 const navBtn = document
   .querySelector('#navBtn')
   .addEventListener('click', function() {
-    window.location = 'https://tipsease.netlify.com/register';
+    window.location = 'https://scott-tipsease.netlify.com/';
   });
 
 const btnL = document
   .querySelector('#btnL')
   .addEventListener('click', function() {
-    window.location = 'https://tipsease.netlify.com/register';
+    window.location = 'https://scott-tipsease.netlify.com/';
   });
 
 const btnR = document
   .querySelector('#btnR')
   .addEventListener('click', function() {
-    window.location = 'https://tipsease.netlify.com/login';
+    window.location = 'https://scott-tipsease.netlify.com/';
   });
 
 const betaBtn = document
   .querySelector('#betaBtn')
   .addEventListener('click', function() {
-    window.location = 'https://tipsease.netlify.com/register';
+    window.location = 'https://scott-tipsease.netlify.com/';
   });
